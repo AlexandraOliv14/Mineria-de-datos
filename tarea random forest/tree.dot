@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="cp <= 0.5\nsamples = 91\nvalue = [39, 52]\nclass = estrechamiento del diametro", fillcolor="#cee6f8"] ;
+1 [label="thal <= 2.5\nsamples = 42\nvalue = [31, 11]\nclass = reduccion del diametro", fillcolor="#eeae7f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="ca <= 0.5\nsamples = 18\nvalue = [8, 10]\nclass = estrechamiento del diametro", fillcolor="#d7ebfa"] ;
+1 -> 2 ;
+3 [label="samples = 12\nvalue = [2, 10]\nclass = estrechamiento del diametro", fillcolor="#61b1ea"] ;
+2 -> 3 ;
+4 [label="samples = 6\nvalue = [6, 0]\nclass = reduccion del diametro", fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label="thalach <= 109.0\nsamples = 24\nvalue = [23, 1]\nclass = reduccion del diametro", fillcolor="#e68642"] ;
+1 -> 5 ;
+6 [label="samples = 2\nvalue = [1, 1]\nclass = reduccion del diametro", fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label="samples = 22\nvalue = [22, 0]\nclass = reduccion del diametro", fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label="trestbps <= 170.0\nsamples = 49\nvalue = [8, 41]\nclass = estrechamiento del diametro", fillcolor="#60b0ea"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="age <= 56.5\nsamples = 47\nvalue = [6, 41]\nclass = estrechamiento del diametro", fillcolor="#56abe9"] ;
+8 -> 9 ;
+10 [label="samples = 24\nvalue = [0, 24]\nclass = estrechamiento del diametro", fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label="samples = 23\nvalue = [6, 17]\nclass = estrechamiento del diametro", fillcolor="#7fc0ee"] ;
+9 -> 11 ;
+12 [label="samples = 2\nvalue = [2, 0]\nclass = reduccion del diametro", fillcolor="#e58139"] ;
+8 -> 12 ;
+}
